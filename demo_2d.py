@@ -33,7 +33,7 @@ def start(movie_path, max_persons):
 
         tmpTime = time.time()
         persons = annotator.update(frame)
-        fps = int(1/(time.time()-tmpTime))
+        fps = 0
 
         poses = [p['pose_2d'] for p in persons]
 
